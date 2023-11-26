@@ -1,0 +1,877 @@
+LAPORAN PRAKTIKUM 
+[PEMROGRAMAN OBJEK]
+
+MODUL [2]
+[Java Identifier, Literal dan Operator]
+
+
+
+DISUSUN OLEH :
+[ADRIAN MUSA ALFAUZAN]	[3411221020]
+
+
+
+
+
+
+
+
+
+
+
+
+PROGRAM STUDI INFORMATIKA
+FAKULTAS SAINS DAN INFORMATIKA
+UNIVERSITAS JENDERAL ACHMAD YANI
+TAHUN 2022
+
+DAFTAR ISI
+
+HASIL PRAKTIKUM
+OutputVariabel.java
+Langkah Kerja/Source Code
+public class OutputVariabel {
+    public static void main(String[] args) {
+        int value = 10;
+        char X;
+        X = 'A';
+        System.out.println(value);
+        System.out.println("The Value of X = " + X);
+
+        // deklarasikan sebuah tipe data dengan nama variabel
+        // result dan tipe data boolean
+        boolean result;
+
+        // deklarasikan sebuah tipe data dengan nama variabel
+        // option dan tipa data char
+        char option;
+        option = 'C'; // Member nilai 'C' pada variabel option
+
+        // deklarasikan sebuah tipe data dengan nama variabel
+        // grade, tipe data double dan nilai inisialisasi 0.0
+        double grade = 0.0;
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dari java
+Analisis
+Variabel value dideklarasikan dengan tipe data int dan diberi nilai 10. Ini adalah contoh inisialisasi variabel saat deklarasi.
+Variabel X dideklarasikan dengan tipe data char, lalu diberi nilai 'A'.
+Nilai variabel value dicetak ke layar dengan menggunakan System.out.println(value). Ini akan mencetak nilai 10 ke layar.
+Nilai variabel X dicetak ke layar dengan pesan "The Value of X = " menggunakan System.out.println("The Value of X = " + X). Ini akan mencetak "The Value of X = A" ke layar.
+Variabel result dideklarasikan dengan tipe data boolean. Variabel ini belum diinisialisasi saat deklarasi, sehingga akan memiliki nilai default, yaitu false.
+Variabel option dideklarasikan dengan tipe data char dan diberi nilai 'C'.
+Variabel grade dideklarasikan dengan tipe data double dan diberi nilai awal 0.0.
+Namun, dalam kode ini, nilai dari variabel result, option, dan grade tidak dicetak ke layar.
+
+AritmatikaDemo.java
+Langkah Kerja/Source Code
+public class AritmatikaDemo {
+    public static void main(String[]args){
+        // some number
+        int i = 37;
+        int j = 42;
+        double x = 27.475;
+        double y = 7.22;
+        System.out.println("\nVariabel values...");
+        System.out.println(" i = " + i);
+        System.out.println(" j = " + j);
+        System.out.println(" x = " + x);
+        System.out.println(" y = " + y);
+
+
+        // adding numbers
+        System.out.println("\nAdding...");
+        System.out.println(" i + j = " + i + j);
+        System.out.println(" x + y = " + x + y);
+
+        // substraction
+        System.out.println("\nSubtracting...");
+        System.out.println(" i - j = " + (i - j));
+        System.out.println(" x - y = " + (x - y));
+
+        // number multiplier
+        System.out.println("\nMultiplying");
+        System.out.println(" i * j = " + i * j);
+        System.out.println(" x * y = " + (x * y));
+
+        // Divide number
+        System.out.println("\nDividing...");
+        System.out.println(" i / j = " + (i / j));
+        System.out.println(" x / y = " + x / y);
+
+        // Counting the modules result
+        System.out.println("\nComputing the remainder...");
+        System.out.println(" i % j = " + i % j);
+        System.out.println(" x % y = " + (x % y));
+
+        // Mixing type
+        System.out.println("\nMixing tipes...");
+        System.out.println(" j + y = " + (j + y));
+        System.out.println(" i + x = " + (i + x));
+
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dariOutputVariabel.java
+Analisis
+i dan j adalah variabel bertipe int dengan nilai 37 dan 42.
+x dan y adalah variabel bertipe double dengan nilai 27.475 dan 7.22.
+Program melakukan operasi penambahan, pengurangan, perkalian, pembagian, dan sisa hasil bagi (modulus) pada variabel-variabel ini. Hasil cetakannya adalah:
+
+Operasi penambahan pada i dan j menggabungkan nilai sebagai string, bukan menjumlahkannya.
+Operasi pengurangan pada i dan j, serta x dan y, menghasilkan selisih yang dicetak.
+Operasi perkalian pada i dan j, serta x dan y, menghasilkan hasil perkalian yang dicetak.
+Operasi pembagian pada i dan j, serta x dan y, menghasilkan hasil pembagian yang dicetak.
+Operasi sisa hasil bagi pada i dan j, serta x dan y, menghasilkan sisa hasil bagi yang dicetak.
+Operasi penambahan campuran tipe data antara j (int) dan y (double), serta i (int) dan x (double), menggabungkan nilai sebagai string, bukan menjumlahkannya.
+Kesalahan utama adalah operasi penambahan yang menggabungkan string, bukan melakukan operasi matematika.
+
+
+OperatorUnary.java
+Langkah Kerja/Source Code
+public class UnaryOperator {
+    public static void main(String[]args){
+        int i = 10;
+        int j = 3;
+        int k = 0;
+        // Cetaklah hasil operasi nilai K di console, berapa
+        // Nilai kemudian analisa
+
+        k = ++j + i;
+        k = j++ + i;
+        System.out.println(k);
+        System.out.println(k);
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dari java
+Analisis
+Variabel i, j, dan k dideklarasikan dengan nilai awal masing-masing. i adalah 10, j adalah 3, dan k awalnya 0.
+
+Terdapat dua ekspresi yang mencoba mengubah nilai k dengan menggunakan operator unary:
+
+Ekspresi pertama: k = ++j + i;
+
+++j adalah operasi pre-increment, yang berarti j akan diinkrement (ditambah 1) sebelum ditambahkan ke i.
+Jadi, nilai j akan menjadi 4 (3 + 1), dan kemudian i (10) ditambahkan, sehingga k akan menjadi 14.
+Hasil dari ekspresi ini dimasukkan ke dalam k, sehingga k sekarang bernilai 14.
+Ekspresi kedua: k = j++ + i;
+
+j++ adalah operasi post-increment, yang berarti j akan diinkrement setelah nilainya digunakan dalam ekspresi.
+Jadi, j (3) ditambahkan ke i (10) terlebih dahulu, sehingga k akan menjadi 13.
+Setelah itu, j diinkrement menjadi 4, tetapi hasil operasi ini tidak dimasukkan ke dalam k.
+Setelah kedua ekspresi dieksekusi, k akan berisi hasil dari ekspresi pertama, yaitu 14.
+
+Dua pernyataan System.out.println(k); mencetak nilai k ke layar. Oleh karena itu, hasil cetakan akan menampilkan nilai k, yang adalah 14.
+
+
+RelationalDemo.java
+Langkah Kerja/Source Code
+public class RelationalDemo {
+    public static void main(String[] args){
+        int i = 37;
+        int j = 42;
+        int k = 42;
+
+        System.out.println(("Nilai variabel..."));
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
+        System.out.println("k = " + k);
+
+        // Lebih besar dari
+        System.out.println(("Lebih besar..."));
+        System.out.println(" i > j = " + (i > j));
+        System.out.println(" j > i = " + (j > i));
+        System.out.println(" k > j = " + (k > j));
+
+        // Lebih besar sama dengan
+        System.out.println(("Lebih besar sama dengan..."));
+        System.out.println(" i >= j = " + (i >= j));
+        System.out.println(" j >= i = " + (j >= i));
+        System.out.println(" k >= j = " + (k >= j));
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dari java
+Analisis
+Variabel i, j, dan k dideklarasikan dan diinisialisasi dengan nilai masing-masing. i diinisialisasi dengan 37, j diinisialisasi dengan 42, dan k juga diinisialisasi dengan 42.
+Program mencetak nilai dari variabel i, j, dan k ke layar.
+Selanjutnya, program menggunakan operator relasional untuk membandingkan nilai-nilai ini dan mencetak hasil perbandingan. Berikut adalah beberapa contoh hasil perbandingan:
+Lebih besar dari:
+i > j akan mencetak hasil false karena 37 tidak lebih besar dari 42.
+j > i akan mencetak hasil true karena 42 lebih besar dari 37.
+k > j akan mencetak hasil false karena keduanya memiliki nilai yang sama, yaitu 42.
+Lebih besar sama dengan:
+i >= j akan mencetak hasil false karena 37 tidak lebih besar atau sama dengan 42.
+j >= i akan mencetak hasil true karena 42 lebih besar atau sama dengan 37.
+k >= j akan mencetak hasil true karena keduanya memiliki nilai yang sama, yaitu 42.
+
+TestAND.java
+Langkah Kerja/Source Code
+public class TestAND {
+    public static void main(String[] args){
+        int i = 0;
+        int j = 10;
+        boolean test = false;
+
+
+        // Contoh &&
+        test = (i > 10) && (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+
+        // Contoh &
+        test = (i > 10) & (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dari java
+Analisis
+Variabel i diinisialisasi dengan 0, variabel j diinisialisasi dengan 10, dan variabel test diinisialisasi dengan false.
+Program pertama-tama menggunakan operator && (logika AND) untuk menguji dua ekspresi:
+test = (i > 10) && (j++ > 9);
+Pertama, program mengevaluasi ekspresi (i > 10). Karena i adalah 0, dan 0 tidak lebih besar dari 10, maka hasilnya adalah false.
+Kedua, program mengevaluasi ekspresi (j++ > 9). Meskipun j++ akan meningkatkan nilai j menjadi 11, karena operator && hanya mengevaluasi ekspresi kedua jika ekspresi pertama false, ekspresi kedua tidak dievaluasi.
+Hasil akhir dari ekspresi false && ... adalah false.
+Program mencetak nilai i ke layar, yang tetap 0.
+Program mencetak nilai j ke layar, yang tetap 10 karena ekspresi kedua tidak dievaluasi.
+Program mencetak nilai test ke layar, yang adalah false.
+
+Kemudian, program menggunakan operator & (AND bitwise) untuk menguji dua ekspresi:
+test = (i > 10) & (j++ > 9);
+Sama seperti sebelumnya, program mengevaluasi ekspresi (i > 10) terlebih dahulu dan menghasilkan false
+Namun, berbeda dengan operator &&, operator & akan mengevaluasi kedua ekspresi, meskipun ekspresi pertama adalah false. Oleh karena itu, program mengevaluasi ekspresi (j++ > 9).
+Hasil dari ekspresi false & (j++ > 9) adalah false, dan j akan meningkat menjadi 11 setelah evaluasi ekspresi.
+Program mencetak nilai i ke layar, yang tetap 0.
+Program mencetak nilai j ke layar, yang sekarang adalah 11 karena ekspresi kedua dievaluasi.
+Program mencetak nilai test ke layar, yang adalah false.
+
+Short circuit pada operator AND (&&) adalah konsep di mana evaluasi ekspresi berhenti segera setelah hasilnya sudah pasti. Dalam konteks operator &&, evaluasi akan berhenti jika ekspresi pertama adalah false karena tidak mungkin hasil akhir dari operasi AND menjadi true jika salah satu operandnya adalah false. Oleh karena itu, ekspresi kedua tidak akan dievaluasi jika ekspresi pertama sudah menghasilkan false.
+
+
+TestOR.java
+Langkah Kerja/Source Code
+public class TestOR {
+    public static void main(String[] args){
+        int i = 0;
+        int j = 10;
+        boolean test = false;
+
+
+        // Contoh ||
+        test = (i > 10) | (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+
+        // Contoh |
+        test = (i > 10) || (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+
+    }
+}
+Screenshot 
+
+Mengeluarkan Output TestOR.java
+Analisis
+Variabel i diinisialisasi dengan 0, variabel j diinisialisasi dengan 10, dan variabel test diinisialisasi dengan false.
+
+Program pertama-tama menggunakan operator | (logika OR) yang salah untuk menguji dua ekspresi:
+
+test = (i > 10) | (j++ > 9);
+Pertama, program mengevaluasi ekspresi (i > 10). Karena i adalah 0, dan 0 tidak lebih besar dari 10, hasilnya adalah false.
+Kedua, program mengevaluasi ekspresi (j++ > 9). Meskipun j++ akan meningkatkan nilai j menjadi 11, karena operator | tidak melakukan short circuit, ekspresi kedua dievaluasi.
+Hasil akhir dari ekspresi false | ... adalah true.
+Program mencetak nilai i ke layar, yang tetap 0.
+
+Program mencetak nilai j ke layar, yang sekarang adalah 11 karena ekspresi kedua dievaluasi.
+
+Program mencetak nilai test ke layar, yang adalah true.
+
+Kemudian, program menggunakan operator || (logika OR) yang benar untuk menguji dua ekspresi:
+
+test = (i > 10) || (j++ > 9);
+Sama seperti sebelumnya, program mengevaluasi ekspresi (i > 10) terlebih dahulu dan menghasilkan false.
+
+Operator || melakukan short circuit, yang berarti evaluasi ekspresi kedua tidak dilakukan jika ekspresi pertama sudah menghasilkan true.
+
+Hasil dari ekspresi false || ... adalah true, dan nilai j tidak akan berubah karena ekspresi kedua tidak dievaluasi.
+
+Program mencetak nilai i ke layar, yang tetap 0.
+
+Program mencetak nilai j ke layar, yang tetap 11 karena ekspresi kedua tidak dievaluasi.
+
+Program mencetak nilai test ke layar, yang adalah true.
+
+
+Short circuit pada operator OR (||) adalah konsep di mana evaluasi ekspresi berhenti segera setelah hasilnya sudah pasti. Dalam konteks operator ||, evaluasi akan berhenti jika ekspresi pertama adalah true karena tidak mungkin hasil akhir dari operasi OR menjadi false jika salah satu operandnya adalah true. Oleh karena itu, ekspresi kedua tidak akan dievaluasi jika ekspresi pertama sudah menghasilkan true.
+
+
+ConditionalOperator.java
+Langkah Kerja/Source Code
+public class ConditionalOperator {
+    public static void main(String[] args){
+        String status = "";
+        int grade = 80;
+
+        // status dari siswa
+        status = (grade >= 60)? "Passed" : "Fail";
+
+        // Cetak status
+        System.out.println(status);
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dari java
+Analisis
+Variabel status dideklarasikan sebagai string dan diinisialisasi dengan string kosong.
+
+Variabel grade dideklarasikan dan diinisialisasi dengan nilai 80.
+
+Program menggunakan operator kondisional (? :) untuk menginisialisasi variabel status berdasarkan kondisi grade >= 60. Operator kondisional memiliki bentuk umum sebagai berikut:
+
+variabel = (kondisi) ? nilai_jika_true : nilai_jika_false;
+Dalam program ini, jika grade lebih besar atau sama dengan 60, maka nilai "Passed" akan ditetapkan ke variabel status. Jika tidak, nilai "Fail" akan ditetapkan.
+
+Hasil dari ekspresi kondisional kemudian ditetapkan ke variabel status.
+
+Program mencetak nilai dari variabel status ke layar.
+
+
+
+Point.java
+Langkah Kerja/Source Code
+public class Point {
+    public  int x = 10;
+    public  int y = 15;
+    public void cetakPoint(){
+        System.out.println(" Koordinat point di ("+ x +","+ y +") ");
+    }
+}
+Screenshot 
+
+Membuat class Point
+Analisis
+Kelas Point memiliki dua atribut atau variabel anggota:
+
+x: Ini adalah variabel yang mewakili koordinat x dari titik.
+y: Ini adalah variabel yang mewakili koordinat y dari titik.
+Kelas Point juga memiliki sebuah metode yang disebut cetakPoint. Metode ini bertugas mencetak koordinat titik ke layar. Ini dilakukan dengan menggunakan System.out.println untuk mencetak pesan teks yang berisi koordinat x dan y dari titik.
+
+Dalam metode cetakPoint, nilai x dan y digabungkan ke dalam pesan teks yang akan dicetak. Ini menggunakan operator konkatenasi + dalam bahasa Java untuk menggabungkan nilai-nilai ini ke dalam string pesan.
+
+Program ini tidak memiliki metode main, yang berarti tidak ada entri utama untuk menjalankan program. Namun, Anda dapat menggunakan kelas Point ini dalam program lain dengan membuat objek dari kelas ini dan memanggil metode cetakPoint untuk mencetak koordinat titik.
+
+
+BuatPoint.java
+Langkah Kerja/Source Code
+public class BuatPoint {
+    public static void main(String[] args){
+        Point a = new Point();
+        Point b = new Point();
+        a.cetakPoint();
+        b.cetakPoint();
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dari BuatPoint.java
+Analisis
+Program "BuatPoint" memiliki metode main yang merupakan titik masuk utama program Java.
+
+Dalam metode main, dua objek Point, yaitu a dan b, dibuat menggunakan konstruktor new Point(). Ini menciptakan dua instance dari kelas "Point" dengan nilai awal x dan y yang sama seperti yang didefinisikan dalam kelas "Point".
+
+Setelah objek a dan b dibuat, metode cetakPoint dipanggil pada kedua objek tersebut:
+
+a.cetakPoint(); akan mencetak koordinat titik a ke layar.
+b.cetakPoint(); akan mencetak koordinat titik b ke layar.
+Javax.swing.java
+Langkah Kerja/Source Code
+import javax.swing.*;
+
+public class BuatWindow {
+    public static void main(String[] args){
+        JFrame  myWindow;
+        myWindow = new JFrame();
+        myWindow.setSize(300,600);
+        myWindow.setTitle(("My First Java Programming"));
+        myWindow.setVisible((true));
+    }
+}
+Screenshot 
+
+Membuat screen dari java
+Analisis
+Program ini mengimpor pustaka Java Swing dengan menggunakan pernyataan import javax.swing.*;. Ini diperlukan untuk mengakses kelas dan komponen Swing yang digunakan untuk pembuatan antarmuka grafis.
+
+Kelas "BuatWindow" memiliki metode main, yang merupakan titik masuk utama program Java.
+
+Dalam metode main, sebuah objek myWindow dari kelas JFrame dibuat. Kelas JFrame adalah bagian dari Java Swing dan digunakan untuk membuat jendela aplikasi.
+
+Kemudian, metode-metode berikut dipanggil pada objek myWindow untuk mengatur beberapa properti jendela:
+
+myWindow.setSize(300, 600);: Ini mengatur ukuran jendela menjadi 300 piksel lebar dan 600 piksel tinggi.
+myWindow.setTitle("My First Java Programming");: Ini mengatur judul jendela.
+myWindow.setVisible(true);: Ini membuat jendela menjadi terlihat (visible).
+Dengan memanggil metode setVisible(true), jendela akan ditampilkan di layar.
+
+
+
+TUGAS PRAKTIKUM
+Tugas 2 – 1.b
+Langkah Kerja/Source Code
+public class OutputVariabel {
+    public static void main(String[] args) {
+        int value = 10;
+        char X;
+        X = 'A';
+        System.out.println(value);
+        System.out.println("The Value of X = " + X);
+
+        // deklarasikan sebuah tipe data dengan nama variabel
+        // result dan tipe data boolean
+        boolean result = true;
+        System.out.println( "" + result);
+
+        // deklarasikan sebuah tipe data dengan nama variabel
+        // option dan tipa data char
+        char option;
+        option = 'C'; // Member nilai 'C' pada variabel option
+        System.out.println(option);
+        // deklarasikan sebuah tipe data dengan nama variabel
+        // grade, tipe data double dan nilai inisialisasi 0.0
+        double grade = 0.0;
+        System.out.println(grade);
+    }
+}
+Screenshot
+
+Gambar 1 – Melakukan output dari file OutputVariabel.java
+Analisis
+Program Java ini mendeklarasikan dan menginisialisasi variabel value dengan tipe data int dan memberikannya nilai 10.
+
+Variabel X dideklarasikan dengan tipe data char, kemudian diberikan nilai 'A'. Nilai value dan X dicetak ke layar.
+
+Variabel result dideklarasikan dengan tipe data boolean dan diinisialisasi dengan true. Nilai result dicetak ke layar. Hasil cetakan ini akan menampilkan "true" karena inisialisasi adalah true.
+
+Variabel option dideklarasikan dengan tipe data char, kemudian diberikan nilai 'C'. Nilai option dicetak ke layar. Hasil cetakan ini akan menampilkan 'C' karena inisialisasi adalah 'C'.
+
+Variabel grade dideklarasikan dengan tipe data double dan diinisialisasi dengan 0.0. Nilai grade dicetak ke layar. Hasil cetakan ini akan menampilkan "0.0" karena inisialisasi adalah 0.0.
+
+Tugas 2 - 2
+Langkah Kerja/Source Code
+public class AritmatikaDemo {
+    public static void main(String[]args){
+        // some number
+        int i = 37;
+        int j = 42;
+        double x = 27.475;
+        double y = 7.22;
+        System.out.println("\nVariabel values...");
+        System.out.println(" i = " + i);
+        System.out.println(" j = " + j);
+        System.out.println(" x = " + x);
+        System.out.println(" y = " + y);
+
+
+        // adding numbers
+        System.out.println("\nAdding...");
+        System.out.println(" i + j = " + (i + j));
+        System.out.println(" x + y = " + (x + y));
+
+        // substraction
+        System.out.println("\nSubtracting...");
+        System.out.println(" i - j = " + (i - j));
+        System.out.println(" x - y = " + (x - y));
+
+        // number multiplier
+        System.out.println("\nMultiplying");
+        System.out.println(" i * j = " + (i * j));
+        System.out.println(" x * y = " + (x * y));
+
+        // Divide number
+        System.out.println("\nDividing...");
+        System.out.println(" i / j = " + (i / j));
+        System.out.println(" x / y = " + (x / y));
+
+        // Counting the modules result
+        System.out.println("\nComputing the remainder...");
+        System.out.println(" i % j = " + (i % j));
+        System.out.println(" x % y = " + (x % y));
+
+        // Mixing type
+        System.out.println("\nMixing tipes...");
+        System.out.println(" j + y = " + (j + y));
+        System.out.println(" i + x = " + (i + x));
+
+    }
+}
+Screenshot 
+
+Gambar 2 – Melakukan output dari file OutputVariabel.java
+
+Analisis
+Variabel i, j, x, dan y dideklarasikan dan diinisialisasi dengan nilai-nilai tertentu.
+
+Program mencetak nilai variabel ke layar.
+
+Program melakukan operasi penambahan i + j dan mencetak hasilnya.
+
+Program melakukan operasi pengurangan i - j dan mencetak hasilnya.
+
+Program melakukan operasi perkalian i * j dan mencetak hasilnya.
+
+Program melakukan operasi pembagian i / j dan mencetak hasilnya.
+
+Program menghitung sisa hasil bagi (modulus) i % j dan mencetak hasilnya.
+
+Program mencampurkan tipe data dengan operasi penambahan antara j (int) dan y (double), serta i (int) dan x (double), dan mencetak hasilnya.
+
+Perbedaan ini terletak pada penggunaan tanda kurung. Dalam versi awal, tanda kurung tidak digunakan sehingga operasi penambahan tidak dievaluasi secara benar, dan hasilnya adalah penggabungan string. Dalam versi diperbaiki, tanda kurung digunakan untuk mengelilingi operasi penambahan, sehingga operasi tersebut dievaluasi dengan benar sebagai operasi matematika, dan hasilnya adalah hasil penambahan yang benar.
+
+Dengan perubahan ini, program versi diperbaiki akan mencetak hasil penambahan dan pengurangan dengan benar, sementara program versi awal akan menggabungkan string yang menghasilkan keluaran yang salah.
+
+Tugas 2 - 3
+Langkah Kerja/Source Code
+public class UnaryOperator {
+    public static void main(String[]args){
+        int i = 10;
+        int j = 3;
+        int k = 0;
+        // Cetaklah hasil operasi nilai K di console, berapa
+        // Nilai kemudian analisa
+
+        k = ++j + i;
+        k = j++ + i;
+        System.out.println(k);
+        System.out.println(k);
+
+        k = --j + i;
+        k = j-- + i;
+        System.out.println(k);
+        System.out.println(k);
+    }
+}
+Screenshot 
+
+Gambar 3 – Memperbaiki UnaryOperator.java
+Analisis
+Saya mendeklarasikan tiga variabel i, j, dan k dengan nilai awal masing-masing. i diinisialisasi dengan 10, j diinisialisasi dengan 3, dan k diinisialisasi dengan 0.
+
+Saya melakukan serangkaian operasi pre-increment dan post-increment pada variabel j dan menginisialisasi k dengan hasil-hasilnya:
+
+Pertama, saya menginisialisasi k dengan hasil operasi ++j + i;. Ini adalah pre-increment terhadap j, yang meningkatkan nilai j menjadi 4, kemudian i (10) ditambahkan. Hasilnya adalah 14, yang dimasukkan ke dalam k.
+
+Selanjutnya, saya menginisialisasi k dengan hasil operasi j++ + i;. Ini adalah post-increment terhadap j, yang meningkatkan nilai j menjadi 4, tetapi hasil post-increment ini tidak memengaruhi hasil ekspresi ini. Hasil operasi adalah 14, dan hasil ini dimasukkan ke dalam k.
+
+Saya mencetak nilai k dua kali. Kedua cetakan ini akan mencetak nilai terbaru dari k, yang pada titik ini adalah 14.
+
+Kemudian, saya melakukan serangkaian operasi pre-decrement dan post-decrement pada variabel j dan menginisialisasi k dengan hasil-hasilnya:
+
+Saya menginisialisasi k dengan hasil operasi --j + i;. Ini adalah pre-decrement terhadap j, yang mengurangi nilai j menjadi 3, kemudian i (10) ditambahkan. Hasilnya adalah 13, yang dimasukkan ke dalam k.
+
+Selanjutnya, saya menginisialisasi k dengan hasil operasi j-- + i;. Ini adalah post-decrement terhadap j, yang mengurangi nilai j menjadi 3, tetapi hasil post-decrement ini tidak memengaruhi hasil ekspresi ini. Hasil operasi adalah 13, dan hasil ini dimasukkan ke dalam k.
+
+Saya mencetak nilai k dua kali lagi. Kedua cetakan ini akan mencetak nilai terbaru dari k, yang pada titik ini adalah 13.
+
+Tugas 2 - 4
+Langkah Kerja/Source Code
+	public class RelationalDemo {
+    public static void main(String[] args){
+        int i = 37;
+        int j = 42;
+        int k = 42;
+
+        System.out.println(("Nilai variabel..."));
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
+        System.out.println("k = " + k);
+
+        // Lebih besar dari
+        System.out.println(("Lebih besar..."));
+        System.out.println(" i > j = " + (i > j));
+        System.out.println(" j > i = " + (j > i));
+        System.out.println(" k > j = " + (k > j));
+
+        // Lebih besar sama dengan
+        System.out.println(("Lebih besar sama dengan..."));
+        System.out.println(" i >= j = " + (i >= j));
+        System.out.println(" j >= i = " + (j >= i));
+        System.out.println(" k >= j = " + (k >= j));
+
+        // Lebih kecil dari
+        System.out.println(("Lebih kecil..."));
+        System.out.println(" i < j = " + (i < j));
+        System.out.println(" j < i = " + (j < i));
+        System.out.println(" k < j = " + (k < j));
+
+        // Lebih kecil sama dengan
+        System.out.println(("lebih kecil sama dengan..."));
+        System.out.println(" i <= j = " + (i <= j));
+        System.out.println(" j <= i = " + (j <= i));
+        System.out.println(" k <= j = " + (k <= j));
+
+        // sama dengan
+        System.out.println(("Sama dengan..."));
+        System.out.println(" i == j = " + (i == j));
+        System.out.println(" j == i = " + (j == i));
+        System.out.println(" k == j = " + (k == j));
+
+        // Tidak sama dengan
+        System.out.println(("Tidak sama dengan..."));
+        System.out.println(" i != j = " + (i != j));
+        System.out.println(" j != i = " + (j != i));
+        System.out.println(" k != j = " + (k != j));
+    }
+}	
+Screenshot 
+
+Gambar 4 – “ Melanjutkan Relational Operator
+Analisis
+Variabel i, j, dan k dideklarasikan dan diinisialisasi dengan nilai masing-masing. i diinisialisasi dengan 37, j diinisialisasi dengan 42, dan k juga diinisialisasi dengan 42.
+
+Program mencetak nilai dari variabel i, j, dan k ke layar.
+
+Selanjutnya, program menggunakan operator relasional untuk membandingkan nilai-nilai ini dan mencetak hasil perbandingan. Berikut adalah hasil perbandingan yang dilakukan:
+
+Lebih besar dari (>):
+
+i > j akan mencetak hasil false karena 37 tidak lebih besar dari 42.
+j > i akan mencetak hasil true karena 42 lebih besar dari 37.
+k > j akan mencetak hasil false karena keduanya memiliki nilai yang sama, yaitu 42.
+Lebih besar sama dengan (>=):
+
+i >= j akan mencetak hasil false karena 37 tidak lebih besar atau sama dengan 42.
+j >= i akan mencetak hasil true karena 42 lebih besar atau sama dengan 37.
+k >= j akan mencetak hasil true karena keduanya memiliki nilai yang sama, yaitu 42.
+Lebih kecil dari (<):
+
+i < j akan mencetak hasil true karena 37 lebih kecil dari 42.
+j < i akan mencetak hasil false karena 42 tidak lebih kecil dari 37.
+k < j akan mencetak hasil false karena keduanya memiliki nilai yang sama, yaitu 42.
+Lebih kecil sama dengan (<=):
+
+i <= j akan mencetak hasil true karena 37 lebih kecil atau sama dengan 42.
+j <= i akan mencetak hasil false karena 42 tidak lebih kecil atau sama dengan 37.
+k <= j akan mencetak hasil true karena keduanya memiliki nilai yang sama, yaitu 42.
+Sama dengan (==):
+
+i == j akan mencetak hasil false karena 37 tidak sama dengan 42.
+j == i akan mencetak hasil false karena 42 tidak sama dengan 37.
+k == j akan mencetak hasil true karena keduanya memiliki nilai yang sama, yaitu 42.
+Tidak sama dengan (!=):
+
+i != j akan mencetak hasil true karena 37 tidak sama dengan 42.
+j != i akan mencetak hasil true karena 42 tidak sama dengan 37.
+k != j akan mencetak hasil false karena keduanya memiliki nilai yang sama, yaitu 42.
+
+
+Tugas 2 - 5
+Langkah Kerja/Source Code
+public class TestAND {
+    public static void main(String[] args){
+        int i = 0;
+        int j = 10;
+        boolean test = false;
+
+
+        // Contoh &&
+        test = (i > 10) && (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+
+        // Contoh &
+        test = (i > 10) & (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+    }
+}
+Screenshot 
+
+Gambar 5 - Mengeluarkan Output dari java
+Analisis
+Variabel i diinisialisasi dengan 0, variabel j diinisialisasi dengan 10, dan variabel test diinisialisasi dengan false.
+Program pertama-tama menggunakan operator && (logika AND) untuk menguji dua ekspresi:
+test = (i > 10) && (j++ > 9);
+Pertama, program mengevaluasi ekspresi (i > 10). Karena i adalah 0, dan 0 tidak lebih besar dari 10, maka hasilnya adalah false.
+Kedua, program mengevaluasi ekspresi (j++ > 9). Meskipun j++ akan meningkatkan nilai j menjadi 11, karena operator && hanya mengevaluasi ekspresi kedua jika ekspresi pertama false, ekspresi kedua tidak dievaluasi.
+Hasil akhir dari ekspresi false && ... adalah false.
+Program mencetak nilai i ke layar, yang tetap 0.
+Program mencetak nilai j ke layar, yang tetap 10 karena ekspresi kedua tidak dievaluasi.
+Program mencetak nilai test ke layar, yang adalah false.
+
+Kemudian, program menggunakan operator & (AND bitwise) untuk menguji dua ekspresi:
+test = (i > 10) & (j++ > 9);
+Sama seperti sebelumnya, program mengevaluasi ekspresi (i > 10) terlebih dahulu dan menghasilkan false
+Namun, berbeda dengan operator &&, operator & akan mengevaluasi kedua ekspresi, meskipun ekspresi pertama adalah false. Oleh karena itu, program mengevaluasi ekspresi (j++ > 9).
+Hasil dari ekspresi false & (j++ > 9) adalah false, dan j akan meningkat menjadi 11 setelah evaluasi ekspresi.
+Program mencetak nilai i ke layar, yang tetap 0.
+Program mencetak nilai j ke layar, yang sekarang adalah 11 karena ekspresi kedua dievaluasi.
+Program mencetak nilai test ke layar, yang adalah false.
+
+Short circuit pada operator AND (&&) adalah konsep di mana evaluasi ekspresi berhenti segera setelah hasilnya sudah pasti. Dalam konteks operator &&, evaluasi akan berhenti jika ekspresi pertama adalah false karena tidak mungkin hasil akhir dari operasi AND menjadi true jika salah satu operandnya adalah false. Oleh karena itu, ekspresi kedua tidak akan dievaluasi jika ekspresi pertama sudah menghasilkan false.
+
+
+Tugas 2-6 
+Langkah Kerja/Source Code
+public class TestOR {
+    public static void main(String[] args){
+        int i = 0;
+        int j = 10;
+        boolean test = false;
+
+
+        // Contoh ||
+        test = (i > 10) | (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+
+        // Contoh |
+        test = (i > 10) || (j++ > 9);
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(test);
+
+    }
+}
+Screenshot 
+
+Mengeluarkan Output TestOR.java
+Analisis
+Variabel i diinisialisasi dengan 0, variabel j diinisialisasi dengan 10, dan variabel test diinisialisasi dengan false.
+
+Program pertama-tama menggunakan operator | (logika OR) yang salah untuk menguji dua ekspresi:
+
+test = (i > 10) | (j++ > 9);
+Pertama, program mengevaluasi ekspresi (i > 10). Karena i adalah 0, dan 0 tidak lebih besar dari 10, hasilnya adalah false.
+Kedua, program mengevaluasi ekspresi (j++ > 9). Meskipun j++ akan meningkatkan nilai j menjadi 11, karena operator | tidak melakukan short circuit, ekspresi kedua dievaluasi.
+Hasil akhir dari ekspresi false | ... adalah true.
+Program mencetak nilai i ke layar, yang tetap 0.
+
+Program mencetak nilai j ke layar, yang sekarang adalah 11 karena ekspresi kedua dievaluasi.
+
+Program mencetak nilai test ke layar, yang adalah true.
+
+Kemudian, program menggunakan operator || (logika OR) yang benar untuk menguji dua ekspresi:
+
+test = (i > 10) || (j++ > 9);
+Sama seperti sebelumnya, program mengevaluasi ekspresi (i > 10) terlebih dahulu dan menghasilkan false.
+
+Operator || melakukan short circuit, yang berarti evaluasi ekspresi kedua tidak dilakukan jika ekspresi pertama sudah menghasilkan true.
+
+Hasil dari ekspresi false || ... adalah true, dan nilai j tidak akan berubah karena ekspresi kedua tidak dievaluasi.
+
+Program mencetak nilai i ke layar, yang tetap 0.
+
+Program mencetak nilai j ke layar, yang tetap 11 karena ekspresi kedua tidak dievaluasi.
+
+Program mencetak nilai test ke layar, yang adalah true.
+
+
+Short circuit pada operator OR (||) adalah konsep di mana evaluasi ekspresi berhenti segera setelah hasilnya sudah pasti. Dalam konteks operator ||, evaluasi akan berhenti jika ekspresi pertama adalah true karena tidak mungkin hasil akhir dari operasi OR menjadi false jika salah satu operandnya adalah true. Oleh karena itu, ekspresi kedua tidak akan dievaluasi jika ekspresi pertama sudah menghasilkan true.
+
+
+Tugas 2 - 7
+Langkah Kerja/Source Code
+public class ConditionalOperator {
+    public static void main(String[] args){
+        String status = "";
+        int grade = 80;
+
+        // status dari siswa
+        status = (grade >= 60)? "Passed" : "Fail";
+
+        // Cetak status
+        System.out.println(status);
+    }
+}
+Screenshot 
+
+Mengeluarkan Output dari java
+Analisis
+Variabel status dideklarasikan sebagai string dan diinisialisasi dengan string kosong.
+
+Variabel grade dideklarasikan dan diinisialisasi dengan nilai 80.
+
+Program menggunakan operator kondisional (? :) untuk menginisialisasi variabel status berdasarkan kondisi grade >= 60. Operator kondisional memiliki bentuk umum sebagai berikut:
+
+variabel = (kondisi) ? nilai_jika_true : nilai_jika_false;
+Dalam program ini, jika grade lebih besar atau sama dengan 60, maka nilai "Passed" akan ditetapkan ke variabel status. Jika tidak, nilai "Fail" akan ditetapkan.
+
+Hasil dari ekspresi kondisional kemudian ditetapkan ke variabel status.
+
+Program mencetak nilai dari variabel status ke layar.
+
+
+Tugas 1 – 7 
+Langkah Kerja/Source Code
+public class Point {
+    public  int x = 10;
+    public  int y = 15;
+    public void cetakPoint(){
+        System.out.println(" Koordinat point di ("+ x +","+ y +") ");
+    }
+}
+
+public class BuatPoint {
+    public static void main(String[] args){
+        Point a = new Point();
+        Point b = new Point();
+        a.cetakPoint();
+        b.cetakPoint();
+    }
+}
+Screenshot 
+
+Gambar 12 - Mengeluarkan Output
+Analisis
+Kelas "Point"
+
+Kelas "Point" memiliki dua atribut (variabel kelas) x dan y, yang masing-masing diinisialisasi dengan nilai 10 dan 15.
+Kelas ini memiliki sebuah metode cetakPoint, yang bertugas mencetak koordinat titik ke layar. Metode ini menggabungkan nilai x dan y ke dalam string pesan menggunakan operator konkatenasi +.
+
+Kelas "BuatPoint"
+
+Kelas "BuatPoint" memiliki metode main, yang merupakan titik masuk utama program Java.
+Dalam metode main, dua objek "Point" dibuat: a dan b, dengan menggunakan konstruktor new Point().
+Kemudian, metode cetakPoint dipanggil pada objek a dan b untuk mencetak koordinat titik ke layar.
+
+Javax.swing.java
+Langkah Kerja/Source Code
+import javax.swing.*;
+
+public class BuatWindow {
+    public static void main(String[] args){
+        JFrame  myWindow;
+        myWindow = new JFrame();
+        myWindow.setSize(300,600);
+        myWindow.setTitle(("My First Java Programming"));
+        myWindow.setVisible((true));
+    }
+}
+Screenshot 
+
+Membuat screen dari java
+Analisis
+
+
+KESIMPULAN
+Saya di praktikum ini telah menggunakan berbagai fitur bahasa Java, seperti deklarasi variabel, operasi aritmatika, operator relasional, operator kondisional, dan Java Swing untuk membuat antarmuka grafis. saya mendefinisikan dan menggunakan kelas-kelas dalam Java, seperti kelas "Point," "BuatPoint," dan "BuatWindow."
+Dalam kelas "Point" dan "BuatPoint,". Lalu, saya di praktikum ini telah memahami cara mendefinisikan atribut, metode, dan membuat objek dari kelas-kelas tersebut.
+Program "BuatWindow" adalah contoh sederhana dari pembuatan jendela grafis menggunakan Java Swing. Program ini menciptakan jendela dengan judul "My First Java Programming" dan ukuran 300x600 piksel.

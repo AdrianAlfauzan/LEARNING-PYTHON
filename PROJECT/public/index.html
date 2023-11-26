@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem E-Commerce</title>
+</head>
+
+<body>
+    <h1>Daftar Produk</h1>
+    <form action="/checkout" method="post">
+        {% for product in products %}
+        <label>
+            <input type="checkbox" name="product" value="{{ product.id }}"> {{ product.name }} - ${{ product.price }}
+        </label><br>
+        {% endfor %}
+        <br>
+        <button type="submit">Checkout</button>
+    </form>
+</body>
+
+</html>

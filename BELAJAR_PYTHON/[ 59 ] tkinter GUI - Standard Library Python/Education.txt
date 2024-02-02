@@ -1,0 +1,28 @@
+Cara menggunakan class “BooleanVar”, “IntVar”, StringVar”dan “DoubleVar” ini di tkinter.
+
+Nah selanjutnya, saya akan mencoba untuk menjelaskan fungsi sebenarnya dari class - class tadi.. San tanpa lama - lama lagi,  Yuk langsung saja disimak ya...
+
+Jadi, sebenarnya, fungsi dari class - class tadi, sama saja seperti tipe data umumnya ya.. Seperti fi bawah ini ya...
+
+
+“BooleanVar” yang sama seperti tipe data boolean... 
+“StringVar” sama saja seperti tipe data String pada umumnya..
+“IntVar” digunakan untuk membuat tipe data integer pada umumnya.
+“IntDouble” digunakan untuk membuat tipe data double atau pecahan ya..
+
+
+Namun, karena code di atas adalah class, maka kita tidak bisa mendapatkan nilai yang ada di dalamnya dengan hanya menyebutkan variabel nya saja ya... Kita perlu memanggil metode yang bernama “get”. Sehingga seperti di bawah ini...
+
+namaVariabel = StringVar()
+namaVariabel.get()
+
+Nah itu lah cara untuk mendapatkan nilai yang ada di dalam nya.. Nah lalu seperti apakah cara untuk mengubah nya ? Untuk merubahnya, kita juga harus memanggil sebuah metode juga loh.. Nama metode nya adalah “set”. Nah cara memanggil nya adalah seperti di bawah ini yaa..
+
+namaVariabel = StringVar()
+namaVariabel.set(nilai yang akan diberikan)
+
+Nah itu dia temen - temen caranya.. Hal ini berbeda dengan tipe data umumnya ya.. Untuk mendapatkan nilainya, kita hanya menyebutkan atau mengetikkan variabelnya saja ya.. Dan untuk mengubah nilainya, kita tinggal memberikan tanda = saja ya. Seperti di bawah ini ya.
+
+a = 2
+a =3
+Print (a)

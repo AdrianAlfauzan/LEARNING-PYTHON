@@ -1,5 +1,12 @@
 # Tipe data : Angka satuan (Integer)
 
+
+# Menggunakan metode format
+# data_integer = 1
+# print("Data Format : {}".format(data_integer))
+# print("Bertipe Format : {}".format(type(data_integer)))
+
+
 data_integer = 1
 print("Data :", data_integer)
 print("Bertipe : ", type(data_integer))

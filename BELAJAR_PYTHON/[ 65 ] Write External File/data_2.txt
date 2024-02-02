@@ -1,0 +1,3 @@
+Halo Programmer 45 
+Halo Programmer 100 
+Menambah dengan append

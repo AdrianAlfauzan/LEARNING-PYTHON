@@ -1,0 +1,12 @@
+# Struktur bikin game :
+# 1. Init / Inisialisasi --> contoh bikin charakter nya, world nya dll
+# --> seperti membuat mobile legends, kita perlu init.
+
+# 2. user input, database input
+# --> user input yang kita masukkan , misalkan dari : stick,mouse , keyboard, memasukkan user dan password dll
+
+# 3. lalu, kita update object nya, update asset yang ada di gamenya
+# --> Lalu, kita update asset, misalkan di awal itu memasukkan menu dll
+
+# 4. render ke display
+# --> lalu kita render, ini adalah yang paling berat. ini untuk menentukan FPS nya
